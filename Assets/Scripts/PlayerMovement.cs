@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public bool isSprint;
     public float force;
     public float defaultForce;
+    public Camera camera;
 
 
     private Vector3 directionIntent;
@@ -107,8 +108,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-            Debug.Log(Physics.Raycast(bodyTransform.position, Vector3.forward, out var hit));
-            Debug.DrawLine(bodyTransform.position, hit.point, Color.black);
+            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                Debug.Log(hit.collider.name); // This will log the name of the collider that the ray hit
+                Debug.DrawLine(ray.origin, hit.point, Color.black); // This draws a line in the Scene view for debugging
+            }
         }
     }
 

@@ -565,6 +565,7 @@ MonoBehaviour:
   isSprint: 0
   force: 0
   defaultForce: 4
+  camera: {fileID: 963194227}
 --- !u!4 &1055415669
 Transform:
   m_ObjectHideFlags: 0

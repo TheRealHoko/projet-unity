@@ -47,8 +47,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Folder Include="Assets" />
+     <Folder Include="Assets\Textures" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Scripts" />
+     <Folder Include="Assets\Materials" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity 2022.3.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
