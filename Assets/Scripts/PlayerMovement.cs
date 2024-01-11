@@ -21,6 +21,8 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Vector3 targetDirection = new Vector3(1, 0, 0);
+        cameraTransform.rotation = Quaternion.LookRotation(targetDirection);
     }
 
     // Update is called once per frame
@@ -77,7 +79,6 @@ public class PlayerMovement : MonoBehaviour
         var rotationX = rotation.eulerAngles.x;
 
         rotationX += -Time.deltaTime * pitchRotationSpeed * mouseYDelta;
-        
 
         var unClampedRotationX = rotationX;
 
@@ -96,9 +97,11 @@ public class PlayerMovement : MonoBehaviour
             ));
 
         if (Input.GetKeyDown(KeyCode.Space) &&
-            Physics.SphereCast(bodyTransform.position + Vector3.up * (0.1f + 0.45f), 0.45f, Vector3.down, 
-                out var _hitInfo, 
-                    0.11f)
+            Physics.SphereCast(bodyTransform.position + Vector3.up * (0.1f + 0.45f),
+                0.45f,
+                Vector3.down, 
+                out var _hitInfo,
+                0.11f)
             )
         {
             wantToJump = true;
