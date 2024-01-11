@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 4236599352314293166}
   - component: {fileID: 348141138419763061}
   - component: {fileID: 4132808723660255233}
-  - component: {fileID: 1415562274732185750}
+  - component: {fileID: 1257262116612165497}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -238,7 +238,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6024440940111478857}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.211835, y: -4.994896, z: -5.1582184}
+  m_LocalPosition: {x: -4.211835, y: -4.994896, z: -5.158218}
   m_LocalScale: {x: 3, y: 0.5, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -273,7 +273,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d247f2794d6b7f14b91dc9a939208952, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -316,7 +316,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &1415562274732185750
+--- !u!95 &1257262116612165497
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -326,7 +326,7 @@ Animator:
   m_GameObject: {fileID: 6024440940111478857}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: de87a92f3d2acd14f9fa1fdbbd3b03fd, type: 2}
+  m_Controller: {fileID: 9100000, guid: 89f0025a6a801a94fbb75e9d0a1e789a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -361,7 +361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6395852438309506187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.6481647, y: 5.2348957, z: 3.8782187}
+  m_LocalPosition: {x: -4.66, y: 5.46, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -371,7 +371,7 @@ Transform:
   - {fileID: 8205605990789626522}
   - {fileID: 2941834844465700310}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7108901567147228273
 GameObject:
@@ -435,7 +435,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 35aa0c4dae515bd408dc66f648127403, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
