@@ -3147,6 +3147,10 @@ PrefabInstance:
       value: DeathCube (6)
       objectReference: {fileID: 0}
     - target: {fileID: 9028231644003454314, guid: 1bf956f5cd6595049807b6b892e58d94, type: 3}
+      propertyPath: gameOverPanel
+      value: 
+      objectReference: {fileID: 717064546}
+    - target: {fileID: 9028231644003454314, guid: 1bf956f5cd6595049807b6b892e58d94, type: 3}
       propertyPath: currentLevelScene
       value: Stage1
       objectReference: {fileID: 0}
