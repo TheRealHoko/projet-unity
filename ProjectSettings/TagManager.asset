@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Movable
   - Door
+  - Hold
   layers:
   - Default
   - TransparentFX
